@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+    } 
+}
+img {
+    width: 100%;
+}
+
+.image {
+    display: none;
+}
+
+#prev {
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    top: 43%;
+    left: 0;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 0px 3px 3px 0;
+    user-select: none;
+}
+
+#next {
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    top: 43%;
+    right: 0;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 3px 0px 0px 3px;
+    user-select: none;
+}
+
+#next:hover,
+#prev:hover {
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.dots {
+    text-align: center;
+    margin: 2%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: lightgray;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation: fade 1.5ms;
+}
+
+@keyframes fade{
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}

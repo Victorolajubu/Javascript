@@ -1,0 +1,45 @@
+<!DOCTYPE hmtl>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css\all.css" />
+    <link rel="stylesheet" href="slideshow.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image fade">
+        <img src="images\img1.jpg" alt="lake view" />
+      </div>
+      <div class="image fade">
+        <img src="images\img2.jpg" alt="sea and hills" />
+      </div>
+      <div class="image fade">
+        <img src="images\img3.jpg" alt="Wooden bridge" />
+      </div>
+      <div class="image fade">
+        <img src="images\img4.jpg" alt="flowers" />
+      </div>
+      <div class="image fade">
+        <img src="images\img5.jpg" alt="Forest hand" />
+      </div>
+      <div class="image fade">
+        <img src="images\img6.jpg" alt="Sunset" />
+      </div>
+
+      <i class="fa fa-less-than" id="prev" onclick="showImage(-1)"></i>
+      <i class="fa fa-greater-than" id="next" onclick="showImage(1)"></i>
+
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <script src="slideshow.js"></script>
+  </body>
+</html>
